@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    position: relative;
+    background-color: rgb(14, 61, 142);
+    width: 80vw;
+    height: 45vh;
+    margin: 25vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.outer .inner1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+.outer .inner2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.outer .inner1 .inner1_1{
+   width: 5rem;
+   height: 5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    border-width: 0.4rem 0 0 0.4rem;
+    border-style: solid;
+    border-color: black;
+}
+.outer .inner1 .inner1_2{
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    border-width: 0.4rem 0.4rem 0 0;
+    border-style: solid;
+    border-color: black;
+}
+.outer .inner2 .inner2_1{
+    width: 5rem;
+    height: 5rem;
+     position: absolute;
+     bottom: 1.5rem;
+     left: 1.5rem;
+     border-width:  0 0 0.4rem 0.4rem;
+     border-style: solid;
+     border-color: black;
+}
+.outer .inner2 .inner2_2{
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    border-width: 0 0.4rem 0.4rem 0;
+    border-style: solid;
+    border-color: black;
+}
+.outer .inner-text {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.outer .inner-text .text{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+.outer .inner-text .scientist{
+    margin: auto;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.outer .inner-text .fa-quote-left{
+    font-size: 4rem;
+    position: absolute;
+    color: white;
+    top: 10vh;
+    left: 7vw;
+}
+.outer .inner-text .fa-quote-right{
+    font-size: 4rem;
+    color: white;
+    color: white;
+    position: absolute;
+    bottom: 10vh;
+    right: 7vw;
+}
+
+@media only screen and (max-width:768px){
+    .outer .inner1 .inner1_1{
+        width: 4rem;
+        height: 4rem;
+         top: 1.5rem;
+         left: 1.5rem;
+        
+     }
+     .outer .inner1 .inner1_2{
+         width: 4rem;
+         height: 4rem;
+         top: 1.5rem;
+         right: 1.5rem;
+     }
+     .outer .inner2 .inner2_1{
+         width: 4rem;
+         height: 4rem;
+          bottom: 1.5rem;
+          left: 1.5rem;
+     }
+     .outer .inner2 .inner2_2{
+         width: 4rem;
+         height: 4rem;
+         bottom: 1.5rem;
+         right: 1.5rem;
+     }
+   
+     .outer .inner-text .text{
+         width: 60%;
+         line-height: 1.3rem;
+         font-size: 0.9rem;
+       
+     }
+     .outer .inner-text .scientist{
+         margin-top: 1.5rem;
+         font-size: 1rem;
+     }
+     .outer .inner-text .fa-quote-left{
+         font-size: 2.4rem;
+         position: absolute;
+         color: white;
+         top: 7vh;
+         left: 10vw;
+     }
+     .outer .inner-text .fa-quote-right{
+         font-size: 2.4rem;
+         color: white;
+         color: white;
+         position: absolute;
+         bottom: 7vh;
+         right: 10vw;
+     }
+     
+}
+@media only screen and (max-width:320px){
+    .outer {
+        width: 90vw;
+    }
+    .outer .inner1 .inner1_1{
+        width: 2.5rem;
+        height: 2.5rem;
+         top: 1.2rem;
+         left: 1.2rem;
+        
+     }
+     .outer .inner1 .inner1_2{
+         width: 2.5rem;
+         height: 2.5rem;
+         top: 1.2rem;
+         right: 1.2rem;
+     }
+     .outer .inner2 .inner2_1{
+         width: 2.5rem;
+         height: 2.5rem;
+          bottom: 1.2rem;
+          left: 1.2rem;
+     }
+     .outer .inner2 .inner2_2{
+         width: 2.5rem;
+         height: 2.5rem;
+         bottom: 1.2rem;
+         right: 1.2rem;
+     }
+   
+     .outer .inner-text .text{
+         width: 75%;
+         line-height: 1rem;
+         font-size: 0.7rem;
+       
+     }
+     .outer .inner-text .scientist{
+         margin-top: 1.2rem;
+         font-size: 0.8rem;
+     }
+     .outer .inner-text .fa-quote-left{
+         font-size: 1.8rem;
+         position: absolute;
+         color: white;
+         top: 7vh;
+         left: 10vw;
+     }
+     .outer .inner-text .fa-quote-right{
+         font-size: 1.8rem;
+         color: white;
+         color: white;
+         position: absolute;
+         bottom: 7vh;
+         right: 10vw;
+     }
+}
